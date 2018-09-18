@@ -3,18 +3,18 @@ import Document, {
   Main,
   NextDocumentContext,
   NextScript,
-} from 'next/document';
-import * as React from 'react';
-import { ServerStyleSheet } from 'styled-components';
+} from 'next/document'
+import * as React from 'react'
+import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }: NextDocumentContext) {
-    const sheet = new ServerStyleSheet();
+    const sheet = new ServerStyleSheet()
     const page = renderPage(App => props =>
       sheet.collectStyles(<App {...props} />)
-    );
-    const styleTags = sheet.getStyleElement();
-    return { ...page, styleTags };
+    )
+    const styleTags = sheet.getStyleElement()
+    return { ...page, styleTags }
   }
 
   render() {
@@ -29,6 +29,6 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </html>
-    );
+    )
   }
 }

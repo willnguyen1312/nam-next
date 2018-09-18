@@ -1,11 +1,11 @@
-import * as React from 'react';
+import * as React from 'react'
 
 interface NiceCheckboxProps {
-  rootID: string;
-  id: string;
-  name: string;
-  value: string;
-  label: string;
+  rootID: string
+  id: string
+  name: string
+  value: string
+  label: string
 }
 
 const NiceCheckbox: React.SFC<NiceCheckboxProps> = (
@@ -21,7 +21,7 @@ const NiceCheckbox: React.SFC<NiceCheckboxProps> = (
       />
       <label htmlFor={props.id}>{props.label}</label>
     </div>
-  );
-};
+  )
+}
 
-export default NiceCheckbox;
+export default NiceCheckbox

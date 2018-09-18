@@ -1,6 +1,6 @@
-import CarsOverview from 'modules/cars/Overview';
-import * as React from 'react';
+import CarsOverview from 'modules/cars/Overview'
+import * as React from 'react'
 
-const CarsPage = () => <CarsOverview />;
+const CarsPage = () => <CarsOverview />
 
-export default CarsPage;
+export default CarsPage
