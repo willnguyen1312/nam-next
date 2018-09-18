@@ -12,7 +12,7 @@ import * as glob from 'glob'
 import * as next from 'next'
 import { basename } from 'path'
 import { IS_DEV } from '../config'
-import { CustomRequestType } from '../typings/customType'
+import { CustomRequestType } from '../typings/custom'
 
 const port = parseInt(process.env.PORT, 10) || 3000
 const app = next({ dev: IS_DEV })
