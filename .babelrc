@@ -1,17 +1,12 @@
 {
   "env": {
     "development": {
-      "presets": [
-        "next/babel",
-        "@zeit/next-typescript/babel"
-      ],
+      "presets": ["next/babel", "@zeit/next-typescript/babel"],
       "plugins": [
         [
           "module-resolver",
           {
-            "root": [
-              "./"
-            ],
+            "root": ["./"],
             "alias": {
               "components": "./src/components",
               "modules": "./src/modules"
@@ -29,17 +24,12 @@
       ]
     },
     "production": {
-      "presets": [
-        "next/babel",
-        "@zeit/next-typescript/babel"
-      ],
+      "presets": ["next/babel", "@zeit/next-typescript/babel"],
       "plugins": [
         [
           "module-resolver",
           {
-            "root": [
-              "./"
-            ],
+            "root": ["./"],
             "alias": {
               "components": "./src/components",
               "modules": "./src/modules"
@@ -58,16 +48,21 @@
     },
     "test": {
       "presets": [
-        "next/babel",
+        [
+          "next/babel",
+          {
+            "preset-env": {
+              "modules": "commonjs"
+            }
+          }
+        ],
         "@zeit/next-typescript/babel"
       ],
       "plugins": [
         [
           "module-resolver",
           {
-            "root": [
-              "./"
-            ],
+            "root": ["./"],
             "alias": {
               "components": "./src/components",
               "modules": "./src/modules"
