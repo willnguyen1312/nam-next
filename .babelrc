@@ -7,6 +7,18 @@
       ],
       "plugins": [
         [
+          "module-resolver",
+          {
+            "root": [
+              "./"
+            ],
+            "alias": {
+              "components": "./src/components",
+              "modules": "./src/modules"
+            }
+          }
+        ],
+        [
           "babel-plugin-styled-components",
           {
             "ssr": true,
@@ -23,6 +35,18 @@
       ],
       "plugins": [
         [
+          "module-resolver",
+          {
+            "root": [
+              "./"
+            ],
+            "alias": {
+              "components": "./src/components",
+              "modules": "./src/modules"
+            }
+          }
+        ],
+        [
           "babel-plugin-styled-components",
           {
             "ssr": true,
@@ -34,17 +58,22 @@
     },
     "test": {
       "presets": [
-        [
-          "next/babel",
-          {
-            "preset-env": {
-              "modules": "commonjs"
-            }
-          }
-        ],
+        "next/babel",
         "@zeit/next-typescript/babel"
       ],
       "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": [
+              "./"
+            ],
+            "alias": {
+              "components": "./src/components",
+              "modules": "./src/modules"
+            }
+          }
+        ],
         [
           "babel-plugin-styled-components",
           {

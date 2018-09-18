@@ -15,6 +15,9 @@
         "sourceMap": false,
         "skipLibCheck": true,
         "baseUrl": ".",
+        "paths": {
+            "*": ["*"],
+        },
         "typeRoots": [
             "./node_modules/@types"
         ],
