@@ -1,0 +1,10 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["node_modules/**/*.ts", "typings/**/*d.ts"]
+  },
+  "rules": {
+    "member-access": false,
+    "semicolon": [true, "always"]
+  }
+}

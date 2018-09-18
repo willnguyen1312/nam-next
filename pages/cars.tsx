@@ -1,5 +1,5 @@
-import * as React from 'react'
-import CarsOverview from './../src/modules/cars/Overview';
+import CarsOverview from 'modules/cars/Overview';
+import * as React from 'react';
 
 const CarsPage = () => <CarsOverview />;
 

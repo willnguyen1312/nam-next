@@ -2,5 +2,7 @@
     "eslint.enable": false,
     "tslint.enable": true,
     "prettier.tslintIntegration": true,
-    "editor.codeLens": true
+    "editor.codeLens": true,
+    "tslint.autoFixOnSave": true,
+    "editor.formatOnSave": true,
 }
