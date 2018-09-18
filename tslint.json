@@ -6,7 +6,11 @@
     "tslint-config-prettier"
   ],
   "linterOptions": {
-    "exclude": ["node_modules/**/*.ts", "typings/**/*d.ts"]
+    "exclude": [
+      "node_modules/**/*.ts",
+      "typings/**/*d.ts",
+      "storybook-static/**/*.js"
+    ]
   },
   "rules": {
     "member-access": false,
