@@ -1,3 +1,1 @@
-import * as React from 'react'
-
-export default () => <h1>Hi</h1>
+export { default } from '../src/modules/home';
