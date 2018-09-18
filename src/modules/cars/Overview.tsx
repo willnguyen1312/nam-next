@@ -24,7 +24,7 @@ export default class CarsOverview extends React.Component<
 
   handleSelectCar = (car: T.Car): void => {
     this.setState({ selectedCar: car });
-  }
+  };
 
   renderCarsList = (cars: T.CarList): JSX.Element => {
     if (!cars || cars.length === 0) {
@@ -35,6 +35,7 @@ export default class CarsOverview extends React.Component<
       <ul>
         {cars.map(
           (car: T.Car, index: number): JSX.Element => (
+            // tslint:disable-next-line:jsx-no-lambda
             <li key={index} onClick={() => this.handleSelectCar(car)}>
               {car.make} {car.model}
             </li>
@@ -42,7 +43,7 @@ export default class CarsOverview extends React.Component<
         )}
       </ul>
     );
-  }
+  };
 
   renderCarInfo = (car: T.Car): JSX.Element => {
     if (!car) {
@@ -55,7 +56,7 @@ export default class CarsOverview extends React.Component<
         <section>{car.engine}</section>
       </div>
     );
-  }
+  };
 
   render() {
     return (

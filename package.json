@@ -24,7 +24,9 @@
     "babel-plugin-styled-components": "^1.7.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "husky": "^0.14.3",
     "jest": "^23.1.0",
+    "lint-staged": "^7.2.2",
     "prettier": "^1.14.2",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.2.0",
@@ -35,11 +37,19 @@
     "typescript": "^2.7.2"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch",
+    "test:all": "jest",
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "lint": "tslint --fix --project tsconfig.json",
-    "typecheck": "yarn tsc"
+    "typecheck": "yarn tsc",
+    "precommit": "yarn lint && yarn typecheck && jest -o && lint-staged"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
