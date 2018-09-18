@@ -20,7 +20,8 @@
             "displayName": true,
             "preprocess": false
           }
-        ]
+        ],
+        "react-intl"
       ]
     },
     "production": {
@@ -42,6 +43,12 @@
             "ssr": true,
             "displayName": true,
             "preprocess": false
+          }
+        ],
+        [
+          "react-intl",
+          {
+            "messagesDir": "lang/.messages/"
           }
         ]
       ]
@@ -76,7 +83,8 @@
             "displayName": true,
             "preprocess": false
           }
-        ]
+        ],
+        "react-intl"
       ]
     }
   }
