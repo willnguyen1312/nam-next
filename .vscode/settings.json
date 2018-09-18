@@ -1,5 +1,6 @@
 {
     "eslint.enable": false,
     "tslint.enable": true,
-    "prettier.tslintIntegration": true
+    "prettier.tslintIntegration": true,
+    "editor.codeLens": true
 }

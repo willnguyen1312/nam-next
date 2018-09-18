@@ -6,4 +6,6 @@ const HomeWrapper = styled.div`
     color: blue;
 `
 
-export default () => <HomeWrapper><h1>Hello</h1></HomeWrapper>
+const Home =  () => <HomeWrapper><h1>Hello</h1></HomeWrapper>
+
+export default Home

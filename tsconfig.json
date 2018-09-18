@@ -14,9 +14,11 @@
         "preserveConstEnums": true,
         "sourceMap": false,
         "skipLibCheck": true,
-        "baseUrl": ".",
+        "baseUrl": "./src",
         "paths": {
-            "*": ["*"],
+            "*": [
+                "*"
+            ]
         },
         "typeRoots": [
             "./node_modules/@types"
