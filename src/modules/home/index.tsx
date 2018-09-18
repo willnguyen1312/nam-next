@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const HomeWrapper = styled.div`
   display: flex;
-  color: blue;
+  color: #661166;
 `
 
 const Home = () => (
