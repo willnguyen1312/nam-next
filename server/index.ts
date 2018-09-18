@@ -37,7 +37,9 @@ const getLocaleDataScript = (locale: string) => {
 // locale. These will only be used in production, in dev the `defaultMessage` in
 // each message description in the source code will be used.
 const getMessages = (locale: string) => {
-  return require(`../lang/${locale}.json`)
+  // Path to local file changed dynamically due to next build
+  const pathToLocaleFile = `${IS_DEV ? '.' : '../../'}/../lang/${locale}.json`
+  return require(pathToLocaleFile)
 }
 
 const getLocale = (locale: string) =>
