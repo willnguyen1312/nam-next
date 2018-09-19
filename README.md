@@ -15,10 +15,12 @@
 
 ## Batteries included
 
-- [x] Typescrript
-- [x] Jest
-- [x] Styled-components
-- [x] React-Intl
-- [x] Redux
 - [x] Absolute import
 - [x] Commit hook
+- [x] Express server
+- [x] Jest
+- [x] React-Intl
+- [x] React-Testing-Library
+- [x] Redux
+- [x] Styled-components
+- [x] Typescrript
