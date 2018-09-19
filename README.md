@@ -21,13 +21,28 @@
 
 ## Batteries included
 
-- [x] Absolute import
-- [x] Commit hook
-- [x] Express server
-- [x] Jest
-- [x] React-Intl
-- [x] React-Helmet
-- [x] React-Testing-Library
-- [x] Redux
-- [x] Styled-components
-- [x] Typescrript
+- [x] [Absolute import][babel-plugin-module-resolver-url]
+- [x] [Commit hook][commit-hook-url]
+- [x] [Express server][express.js-url]
+- [x] [Jest][jest-url]
+- [x] [Next.js][next.js-url]
+- [x] [React-Intl][react-intl-url]
+- [x] [React-Helmet][react-helmet]
+- [x] [React-Testing-Library][react-testing-library]
+- [x] [Redux][redux-url]
+- [x] [Immutable.js][immutable.js-url]]
+- [x] [Styled-components][styled-components-url]
+- [x] [Typescrript][typescript-url]
+
+[babel-plugin-module-resolver-url]: https://github.com/tleunen/babel-plugin-module-resolver
+[commit-hook-url]: https://githooks.com/
+[express.js-url]: https://expressjs.com/
+[jest-url]: https://jestjs.io/
+[next.js-url]: https://github.com/zeit/next.js/
+[react-intl-url]: https://github.com/yahoo/react-intl
+[react-helmet]: https://github.com/nfl/react-helmet
+[react-testing-library]: https://github.com/kentcdodds/react-testing-library
+[redux-url]: https://redux.js.org/
+[immutable.js-url]: http://facebook.github.io/immutable-js/
+[styled-components-url]: https://www.styled-components.com/
+[typescript-url]: http://www.typescriptlang.org/
