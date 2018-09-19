@@ -9,7 +9,8 @@
             "root": ["./"],
             "alias": {
               "components": "./src/components",
-              "modules": "./src/modules"
+              "modules": "./src/modules",
+              "api": "./src/api"
             }
           }
         ],

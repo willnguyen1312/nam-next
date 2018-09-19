@@ -1,3 +1,4 @@
+import { restAPI } from 'api'
 import getConfig from 'next/config'
 import Head from 'next/head'
 import React, { Component } from 'react'
@@ -13,8 +14,9 @@ const { description } = defineMessages({
 })
 
 class Index extends Component<any, any> {
-  static getInitialProps() {
-    // console.log(object)
+  static async getInitialProps() {
+    const data = await restAPI.get('users').then(res => res.data)
+    return { data }
   }
 
   render() {
@@ -32,6 +34,7 @@ class Index extends Component<any, any> {
         <p>
           <FormattedMessage id="greeting" defaultMessage="Hello, World!" />
         </p>
+        <h1>{this.props.data.length}</h1>
         <p>
           <FormattedNumber value={1000} />
         </p>
