@@ -16,7 +16,7 @@ if (typeof window !== 'undefined' && (window as any).ReactIntlLocaleData) {
 
 export default withRedux(initStore)(
   class MyApp extends App<any, any> {
-    static async getInitialProps({ Component, ctx }: any) {
+    static async getInitialProps({ Component, ctx }) {
       const pageProps = Component.getInitialProps
         ? await Component.getInitialProps(ctx)
         : {}

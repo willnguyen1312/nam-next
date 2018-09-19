@@ -10,7 +10,7 @@ class Counter extends React.Component<any, any> {
     store.dipatch(addCount())
     return { isServer }
   }
-  timer: any
+  timer
 
   componentDidMount() {
     this.timer = this.props.startClock()

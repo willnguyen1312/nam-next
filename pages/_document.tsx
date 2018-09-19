@@ -1,12 +1,11 @@
-// tslint:disable:no-any
 import Document, { Head, Main, NextScript } from 'next/document'
 import * as React from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class IntlDocument extends Document {
-  static getInitialProps(context: any) {
+  static getInitialProps(context) {
     const sheet = new ServerStyleSheet()
-    const page = context.renderPage((App: any) => (props: any) =>
+    const page = context.renderPage(App => props =>
       sheet.collectStyles(<App {...props} />)
     )
     const {

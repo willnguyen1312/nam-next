@@ -10,7 +10,6 @@ const messages = defineMessages({
   },
 })
 
-// tslint:disable-next-line:no-any
 export default injectIntl(({ intl, title, children }: any) => (
   <div>
     <Head>

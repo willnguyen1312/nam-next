@@ -69,8 +69,7 @@ app.prepare().then(() => {
     return handle(req, res)
   })
 
-  // tslint:disable:no-any
-  server.listen(port, (err: any) => {
+  server.listen(port, err => {
     if (err) {
       throw err
     }

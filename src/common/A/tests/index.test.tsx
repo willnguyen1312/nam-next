@@ -27,8 +27,6 @@ const renderAnchorComponent = (props = {}) => {
 describe('<A />', () => {
   it('should render an <a> tag', () => {
     const { container } = renderAnchorComponent()
-    // tslint:disable-next-line:no-console
-    // console.log(container.firstChild)
     expect(container.firstElementChild.nodeName.toLowerCase()).toEqual('a')
   })
 
