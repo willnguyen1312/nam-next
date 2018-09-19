@@ -5,6 +5,7 @@ Intl.NumberFormat = IntlPolyfill.NumberFormat
 Intl.DateTimeFormat = IntlPolyfill.DateTimeFormat
 
 import * as accepts from 'accepts'
+import * as compression from 'compression'
 import * as cookieParser from 'cookie-parser'
 import * as express from 'express'
 import { readFileSync } from 'fs'
@@ -54,6 +55,7 @@ const getBrowserDefaultLocale = (req: CustomRequestType) => {
 
 app.prepare().then(() => {
   const server = express()
+  server.use(compression())
   server.use(cookieParser())
 
   server.get('*', (req: CustomRequestType, res) => {
