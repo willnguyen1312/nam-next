@@ -1,16 +1,16 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import Page from '../src/Page'
+import Page from '../src/reduxDemo/Page'
 import { addCount, serverRenderClock, startClock } from '../store'
 
 class Counter extends React.Component<any, any> {
   static getnitialProps({ store, isServer }) {
     store.dispatch(serverRenderClock(isServer))
     store.dipatch(addCount())
-    return {isServer }
+    return { isServer }
   }
-  timer:any
+  timer: any
 
   componentDidMount() {
     this.timer = this.props.startClock()

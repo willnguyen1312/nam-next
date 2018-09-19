@@ -1,25 +1,15 @@
-import React from "react";
-import { addDecorator, configure } from "@storybook/react";
-
-addDecorator(story => (
-  <React.Fragment>
-    <style dangerouslySetInnerHTML={{__html: `
-      html {
-        box-sizing: border-box;
-      }
-
-      *, *:before, *:after {
-        box-sizing: inherit;
-      }
-    `}}/>
-    {story()}
-  </React.Fragment>
-))
+import { addDecorator, configure, setAddon } from '@storybook/react';
+import JSXAddon from 'storybook-addon-jsx';
+import { withKnobs } from '@storybook/addon-knobs/react';
+addDecorator(withKnobs);
+setAddon(JSXAddon);
 
 // automatically import all files ending in *.stories.js
-const req = require.context("../src/coms", true, /.stories.tsx$/);
+const reqs = [require.context('../src/storybookDemo', true, /.stories.tsx$/)];
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  reqs.forEach(req => {
+    req.keys().forEach(filename => req(filename));
+  });
 }
 
 configure(loadStories, module);
