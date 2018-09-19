@@ -19,5 +19,6 @@
 - [x] Jest
 - [x] Styled-components
 - [x] React-Intl
+- [x] Redux
 - [x] Absolute import
 - [x] Commit hook
