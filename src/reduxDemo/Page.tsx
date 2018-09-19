@@ -12,7 +12,7 @@ export default connect(state => state)(
         <Clock lastUpdate={lastUpdate} light={light} />
         <AddCount />
         <nav>
-          <Link href={linkTo}>
+          <Link prefetch={true} href={linkTo}>
             <a>Navigate</a>
           </Link>
         </nav>

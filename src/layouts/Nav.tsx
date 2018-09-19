@@ -21,14 +21,14 @@ export default class Nav extends React.Component {
       <nav>
         <ul>
           <li>
-            <Link href="/">
+            <Link prefetch={true} href="/">
               <a>
                 <FormattedMessage id="nav.home" defaultMessage="Home" />
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/about">
+            <Link prefetch={true} href="/about">
               <a>
                 <FormattedMessage id="nav.about" defaultMessage="About" />
               </a>

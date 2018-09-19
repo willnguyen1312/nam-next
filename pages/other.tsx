@@ -21,7 +21,7 @@ class Counter extends React.Component<any, any> {
   }
 
   render() {
-    return <Page title="Other Page" linkTo="/" />
+    return <Page title="Other Page" linkTo="/counter" />
   }
 }
 
