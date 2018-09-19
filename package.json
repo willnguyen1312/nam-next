@@ -67,6 +67,7 @@
     "jest": "^23.6.0",
     "jest-axe": "^3.1.0",
     "jest-dom": "^1.12.1",
+    "next-optimized-images": "^1.4.1",
     "nodemon": "^1.18.4",
     "prettier": "^1.14.2",
     "react-addons-test-utils": "^15.6.2",

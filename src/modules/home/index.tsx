@@ -5,6 +5,7 @@ import getConfig from 'next/config'
 import Head from 'next/head'
 import React, { Component } from 'react'
 import { defineMessages, FormattedMessage, FormattedNumber } from 'react-intl'
+import { sample } from './img'
 
 const { description } = defineMessages({
   description: {
@@ -38,6 +39,7 @@ class Index extends Component<any, any> {
         <p>
           <FormattedNumber value={1000} />
         </p>
+        <img src={sample} />
       </Layout>
     )
   }
