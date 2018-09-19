@@ -1,4 +1,4 @@
-// tslint:disable:no-any
+import getConfig from 'next/config'
 import Head from 'next/head'
 import React, { Component } from 'react'
 import { defineMessages, FormattedMessage, FormattedNumber } from 'react-intl'
@@ -14,10 +14,14 @@ const { description } = defineMessages({
 
 class Index extends Component<any, any> {
   static getInitialProps() {
-    // Do something
+    // console.log(object)
   }
 
   render() {
+    const envs = getConfig()
+    // tslint:disable:no-console
+    console.log(envs.publicRuntimeConfig)
+    console.log(envs.serverRuntimeConfig)
     const { intl } = this.props
 
     return (
