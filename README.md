@@ -26,6 +26,7 @@
 - [x] Express server
 - [x] Jest
 - [x] React-Intl
+- [x] React-Helmet
 - [x] React-Testing-Library
 - [x] Redux
 - [x] Styled-components

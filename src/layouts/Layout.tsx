@@ -1,26 +1,11 @@
-import Head from 'next/head'
 import React from 'react'
-import { defineMessages, injectIntl } from 'react-intl'
 import Nav from './Nav'
 
-const messages = defineMessages({
-  title: {
-    id: 'title',
-    defaultMessage: 'React Intl Next.js Example',
-  },
-})
-
-export default injectIntl(({ intl, title, children }: any) => (
+export default ({ children }) => (
   <div>
-    <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>{title || intl.formatMessage(messages.title)}</title>
-    </Head>
-
     <header>
       <Nav />
     </header>
-
     {children}
   </div>
-))
+)

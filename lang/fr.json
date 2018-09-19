@@ -1,7 +1,8 @@
 {
-  "title": "React Intl Next.js Exemple",
+  "home.title": "React Intl Next.js French Home",
+  "about.title": "React Intl Next.js French About",
   "nav.home": "Accueil",
   "nav.about": "À propos de nous",
-  "description": "Un exemple d'application intégrant React Intl avec Next.js",
+  "home.description": "Un exemple d'application intégrant React Intl avec Next.js French",
   "greeting": "Bonjour le monde!"
 }
