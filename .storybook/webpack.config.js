@@ -1,11 +1,24 @@
-const path = require("path");
-const TSDocgenPlugin = require("react-docgen-typescript-webpack-plugin");
-module.exports = (baseConfig, env, defaultConfig) => {
-  defaultConfig.module.rules.push({
-    test: /\.(ts|tsx)$/,
-    loader: require.resolve("awesome-typescript-loader")
+const path = require('path');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+
+module.exports = (baseConfig, env, config /* Storybook 4 default config */) => {
+  config.module.rules.push({
+    test: /\.tsx?$/,
+    include: path.resolve(__dirname, '../src'),
+    use: [
+      {
+        loader: 'ts-loader',
+        options: {
+          configFile: require.resolve('../tsconfig.storybook.json'),
+        },
+      },
+      {
+        loader: 'react-docgen-typescript-loader',
+      },
+    ],
   });
-  defaultConfig.plugins.push(new TSDocgenPlugin());
-  defaultConfig.resolve.extensions.push(".ts", ".tsx");
-  return defaultConfig;
+
+  config.resolve.extensions.push('.ts', '.tsx');
+
+  return config;
 };
