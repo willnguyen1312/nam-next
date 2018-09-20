@@ -34,6 +34,7 @@
 - [x] [React-Testing-Library][react-testing-library]
 - [x] [Redux][redux-url]
 - [x] [Immutable.js][immutable.js-url]
+- [x] [Storybook][storybook-url]
 - [x] [Styled-components][styled-components-url]
 - [x] [Typescrript][typescript-url]
 
@@ -48,5 +49,6 @@
 [react-testing-library]: https://github.com/kentcdodds/react-testing-library
 [redux-url]: https://redux.js.org/
 [immutable.js-url]: http://facebook.github.io/immutable-js/
+[storybook-url]: https://storybook.js.org/
 [styled-components-url]: https://www.styled-components.com/
 [typescript-url]: http://www.typescriptlang.org/
