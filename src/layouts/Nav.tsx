@@ -1,3 +1,4 @@
+import * as Cookie from 'js-cookie'
 import Link from 'next/link'
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
@@ -8,12 +9,17 @@ export default class Nav extends React.Component {
   }
 
   handleChangeLocale = (event: React.MouseEvent<HTMLLIElement>) => {
+    event.preventDefault()
     const {
       currentTarget: { innerText: locale },
     } = event
 
-    document.cookie = `language=${locale}`
-    location.reload()
+    const previousLocale = Cookie.get('language')
+
+    if (locale !== previousLocale) {
+      Cookie.set('language', locale)
+      location.reload()
+    }
   }
 
   render() {
