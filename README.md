@@ -24,6 +24,7 @@
 ## Batteries included
 
 - [x] [Absolute import][babel-plugin-module-resolver-url]
+- [x] [Axios][axios-url]
 - [x] [Commit hook][commit-hook-url]
 - [x] [Express server][express.js-url]
 - [x] [Jest][jest-url]
@@ -32,10 +33,11 @@
 - [x] [React-Helmet][react-helmet]
 - [x] [React-Testing-Library][react-testing-library]
 - [x] [Redux][redux-url]
-- [x] [Immutable.js][immutable.js-url]]
+- [x] [Immutable.js][immutable.js-url]
 - [x] [Styled-components][styled-components-url]
 - [x] [Typescrript][typescript-url]
 
+[axios-url]: https://github.com/axios/axios
 [babel-plugin-module-resolver-url]: https://github.com/tleunen/babel-plugin-module-resolver
 [commit-hook-url]: https://githooks.com/
 [express.js-url]: https://expressjs.com/
