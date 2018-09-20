@@ -1,5 +1,7 @@
 # Next.js project boilerplate
 
+[![CircleCI](https://circleci.com/gh/willnguyen1312/nam-next.svg?style=svg)](https://circleci.com/gh/willnguyen1312/nam-next)
+
 ## Setup
 
 - git clone https://github.com/willnguyen1312/nam-next.git {folder_name}
