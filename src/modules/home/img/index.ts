@@ -1,1 +1,1 @@
-export { default as sample } from './sample.png'
+export { default as sampleImg } from './sample.png'

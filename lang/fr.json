@@ -1,8 +1,9 @@
 {
-  "home.title": "React Intl Next.js French Home",
-  "about.title": "React Intl Next.js French About",
+  "home.title": "French Home",
+  "home.description": "Home Description French",
+  "about.title": "French About",
+  "about.description": "About Description French",
   "nav.home": "Accueil",
   "nav.about": "À propos de nous",
-  "home.description": "Un exemple d'application intégrant React Intl avec Next.js French",
   "greeting": "Bonjour le monde!"
 }

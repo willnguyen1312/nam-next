@@ -5,9 +5,8 @@ import Page from '../src/reduxDemo/Page'
 import { addCount, serverRenderClock, startClock } from '../store'
 
 class Counter extends React.Component<any, any> {
-  static getInitialProps({ store, isServer }) {
-    store.dispatch(serverRenderClock(isServer))
-    store.dispatch(addCount())
+  static getInitialProps({ reduxStore, isServer }) {
+    reduxStore.dispatch(serverRenderClock(isServer))
 
     return { isServer }
   }

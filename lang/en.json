@@ -1,9 +1,9 @@
 {
-  "home.title": "English Home",
-  "about.title": "Enlish About",
+  "home.title": "English Home Title",
+  "home.description": "Home Description English",
+  "about.title": "English About Title",
+  "about.description": "About Description English",
   "nav.home": "Home",
   "nav.about": "About",
-  "home.description": "Home Description English",
-  "about.description": "About Description English",
   "greeting": "Hello, World!"
 }

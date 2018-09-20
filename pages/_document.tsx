@@ -1,8 +1,9 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import * as React from 'react'
-import Helmet from 'react-helmet'
 import { ServerStyleSheet } from 'styled-components'
 
+// The document (which is SSR-only) needs to be customized to expose the locale
+// data for the user's locale for React Intl to work in the browser.
 export default class IntlDocument extends Document {
   static async getInitialProps(context) {
     const documentProps = await super.getInitialProps(context)
@@ -15,43 +16,12 @@ export default class IntlDocument extends Document {
     } = context
     const styleTags = sheet.getStyleElement()
     return {
-      ...page,
       ...documentProps,
-      helmet: Helmet.renderStatic(),
+      ...page,
       styleTags,
       locale,
       localeDataScript,
     }
-  }
-
-  // should render on <html>
-  get helmetHtmlAttrComponents() {
-    return this.props.helmet.htmlAttributes.toComponent()
-  }
-
-  // should render on <body>
-  get helmetBodyAttrComponents() {
-    return this.props.helmet.bodyAttributes.toComponent()
-  }
-
-  // should render on <head>
-  get helmetHeadComponents() {
-    return Object.keys(this.props.helmet)
-      .filter(el => el !== 'htmlAttributes' && el !== 'bodyAttributes')
-      .map(el => this.props.helmet[el].toComponent())
-  }
-
-  get helmetJsx() {
-    return (
-      <Helmet
-        htmlAttributes={{ lang: 'en' }}
-        title="Next.js boilerplate page!"
-        meta={[
-          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-          { property: 'og:title', content: 'Next.js boilerplate page!' },
-        ]}
-      />
-    )
   }
 
   render() {
@@ -61,13 +31,9 @@ export default class IntlDocument extends Document {
     }`
 
     return (
-      <html {...this.helmetHtmlAttrComponents}>
-        <Head>
-          {this.helmetJsx}
-          {this.helmetHeadComponents}
-          {this.props.styleTags}
-        </Head>
-        <body {...this.helmetBodyAttrComponents}>
+      <html>
+        <Head />
+        <body>
           <Main />
           <script src={polyfill} />
           <script
