@@ -9,7 +9,6 @@
     "exclude": [
       "node_modules/**/*.ts",
       "typings/**/*d.ts",
-      "storybook-static/**/*.js",
       "build/**/*.js"
     ]
   },

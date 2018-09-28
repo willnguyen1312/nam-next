@@ -70,7 +70,6 @@ jspm_packages/
 .serverless
 
 # Custom
-storybook-static
 build
 
 # sample files to test snippet of typescript
