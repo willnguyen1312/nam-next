@@ -73,5 +73,6 @@ jspm_packages/
 storybook-static
 build
 
-# sample file to test snippet of typescript
-playground.ts 
+# sample files to test snippet of typescript
+_tmp
+.docz
