@@ -1,3 +1,9 @@
+import { Button, Container } from "@chakra-ui/react";
+
 export default function IndexPage() {
-  return <h1>Home page</h1>;
+  return (
+    <Container>
+      <Button>Hello there</Button>
+    </Container>
+  );
 }
