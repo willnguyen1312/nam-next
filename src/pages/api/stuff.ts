@@ -17,7 +17,10 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const nextId = cursor < 100 ? data[data.length - 1].id + 1 : null;
   const previousId = cursor > 0 ? data[0].id - pageSize : null;
 
-  setTimeout(() => {
-    res.json({ data, nextId, previousId });
-  }, 1000);
+  return new Promise<void>((resolve) => {
+    setTimeout(() => {
+      res.json({ data, nextId, previousId });
+      resolve();
+    }, 1000);
+  });
 }

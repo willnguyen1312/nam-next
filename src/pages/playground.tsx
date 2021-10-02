@@ -5,30 +5,19 @@ import Image from "next/image";
 
 import { useVirtual } from "react-virtual";
 import { last } from "lodash-es";
-import {
-  useInfiniteQuery,
-  QueryClient,
-  QueryClientProvider,
-} from "react-query";
-
-import { ReactQueryDevtools } from "react-query/devtools";
+import { useInfiniteQuery } from "react-query";
 
 import { Stuff } from "../interfaces";
 
-const queryClient = new QueryClient();
-
 export default function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <main className="m-12 w-1/2 border-green-300 border-solid border-2 p-4">
-        <NextSeo
-          title="Next.js with Windowing playground"
-          description="This is my playground with next.js, react-query, react-virtual and tailwind"
-        />
-        <Sample />
-        <ReactQueryDevtools initialIsOpen position="bottom-right" />
-      </main>
-    </QueryClientProvider>
+    <main className="m-12 w-1/2 border-green-300 border-solid border-2 p-4">
+      <NextSeo
+        title="Next.js with Windowing playground"
+        description="This is my playground with next.js, react-query, react-virtual and tailwind"
+      />
+      <Sample />
+    </main>
   );
 }
 
