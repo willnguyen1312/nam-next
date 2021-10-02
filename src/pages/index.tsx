@@ -5,7 +5,7 @@ import { Zeit } from "../components/icons";
 import { useFirstTwentyPokemonsQuery } from "../graphql";
 
 export default function IndexPage() {
-  const [result, reexecuteQuery] = useFirstTwentyPokemonsQuery();
+  const [result] = useFirstTwentyPokemonsQuery();
 
   const { data } = result;
   console.log(data);
