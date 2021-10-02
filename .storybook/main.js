@@ -1,5 +1,5 @@
 module.exports = {
-  stories: ["../stories/**/*.stories.@(ts|tsx|js|jsx|mdx)"],
+  stories: ["../src/**/*.stories.@(ts|tsx|js|jsx|mdx)"],
   addons: [
     "@snek-at/storybook-addon-chakra-ui",
     "@storybook/addon-essentials",
