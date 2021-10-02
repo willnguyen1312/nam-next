@@ -1,0 +1,6 @@
+  query firstTwentyPokemons {
+    pokemons(first: 20) {
+      image
+      name
+    }
+  }

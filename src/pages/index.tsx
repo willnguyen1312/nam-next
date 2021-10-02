@@ -1,8 +1,15 @@
 import Image from "next/image";
 import { Button, Container, Stack, Box } from "@chakra-ui/react";
+
 import { Zeit } from "../components/icons";
+import { useFirstTwentyPokemonsQuery } from "../graphql";
 
 export default function IndexPage() {
+  const [result, reexecuteQuery] = useFirstTwentyPokemonsQuery();
+
+  const { data } = result;
+  console.log(data);
+
   return (
     <Container>
       <Stack direction={["column"]} spacing="24px">

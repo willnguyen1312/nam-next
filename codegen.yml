@@ -1,0 +1,10 @@
+schema: https://graphql-pokemon2.vercel.app
+documents: ./src/graphql/queries/**/*.graphql
+generates:
+  src/graphql/__generated__/index.tsx:
+    config:
+      withHooks: true
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-urql
