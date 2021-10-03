@@ -1,0 +1,3 @@
+node_modules
+src/graphql/__generated__
+.next
