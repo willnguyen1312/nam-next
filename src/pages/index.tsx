@@ -8,7 +8,7 @@ export default function IndexPage() {
     const [result] = useFirstTwentyPokemonsQuery();
 
     const { data } = result;
-    console.log(data);
+    // console.log(data);
 
     return (
         <Container>
