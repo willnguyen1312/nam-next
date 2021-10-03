@@ -13,7 +13,7 @@ export default function IndexPage() {
     return (
         <Container>
             <Stack direction={['column']} spacing="24px">
-                <Button>Hello there</Button>
+                <Button data-test="docs-btn-anchor">Hello there</Button>
                 <Box>
                     <Image
                         alt="Stuff"

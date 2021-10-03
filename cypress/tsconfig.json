@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "importHelpers": true,
+        "removeComments": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "target": "es5",
+        "lib": ["es5", "dom"],
+        "types": ["cypress", "@testing-library/cypress"]
+    },
+    "include": ["**/*.ts"]
+}
