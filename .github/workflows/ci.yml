@@ -38,7 +38,13 @@ jobs:
           version: 6.0.2
           run_install: true
 
-      - name: Run tests
+      - name: Run lint
+        run: pnpm lint
+
+      - name: Run unit tests
         run: pnpm test:ci
         env:
           CI: true
+
+      - name: Run e2e tests
+        run: pnpm run e2e:headless
