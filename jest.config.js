@@ -27,6 +27,7 @@ module.exports = {
         '\\.(gql|graphql)$': 'jest-transform-graphql',
         '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
     },
+    modulePathIgnorePatterns: ['<rootDir>/cypress/'],
     transformIgnorePatterns: [
         '/node_modules/',
         '^.+\\.module\\.(css|sass|scss)$',
